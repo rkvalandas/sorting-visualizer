@@ -40,13 +40,13 @@ body {
 }
 
 .bar {
-    margin: 0 2px;
-    padding-left: 5px;
+    margin: 0 1.5px;
     background-color: rgb(2, 173, 59);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     transition: height 0.2s;
-    width: calc(80% / 50 - 4px);
+    width: calc(90% / 50 - 3px);
+    text-align: center;
 }
 
 .bar span {
@@ -54,7 +54,6 @@ body {
     width: 100%;
     color: black;
     font-size: 0.9vw;
-    text-align: center;
 }
 
 .active-bar {
