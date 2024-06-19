@@ -16,7 +16,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
     row-gap: 10px;
-    width: 30%;
+    width: 0%;
     background-color: #fff;
     padding: 15px;
     border-radius: 25px;
@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 95%;
+    width: 90%;
     height: 70vh;
     border: 1px solid #ccc;
     background-color: #fff;
