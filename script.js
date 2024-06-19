@@ -25,6 +25,9 @@ function renderArray(activeIndices = []) {
         if (activeIndices.includes(index)) {
             bar.classList.add('active-bar');
         }
+        const barLabel = document.createElement('span');
+        barLabel.textContent = value;
+        bar.appendChild(barLabel);
         arrayContainer.appendChild(bar);
     });
 }
