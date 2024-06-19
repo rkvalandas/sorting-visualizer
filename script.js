@@ -16,12 +16,15 @@ function generateArray(size = 50) {
     renderArray();
 }
 
-function renderArray() {
+function renderArray(activeIndices = []) {
     arrayContainer.innerHTML = '';
-    array.forEach(value => {
+    array.forEach((value, index) => {
         const bar = document.createElement('div');
         bar.classList.add('bar');
         bar.style.height = `${value}%`;
+        if (activeIndices.includes(index)) {
+            bar.classList.add('active-bar');
+        }
         arrayContainer.appendChild(bar);
     });
 }
@@ -33,13 +36,16 @@ function sleep(ms) {
 async function bubbleSort() {
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length - i - 1; j++) {
+            renderArray([j, j + 1]);
+            await sleep(delay);
             if (array[j] > array[j + 1]) {
                 [array[j], array[j + 1]] = [array[j + 1], array[j]];
-                renderArray();
+                renderArray([j, j + 1]);
                 await sleep(delay);
             }
         }
     }
+    renderArray();
 }
 
 async function insertionSort() {
@@ -49,13 +55,14 @@ async function insertionSort() {
         while (j >= 0 && array[j] > key) {
             array[j + 1] = array[j];
             j = j - 1;
-            renderArray();
+            renderArray([j + 1, i]);
             await sleep(delay);
         }
         array[j + 1] = key;
-        renderArray();
+        renderArray([j + 1, i]);
         await sleep(delay);
     }
+    renderArray();
 }
 
 async function quickSort(start = 0, end = array.length - 1) {
@@ -65,21 +72,23 @@ async function quickSort(start = 0, end = array.length - 1) {
     let index = await partition(start, end);
     await quickSort(start, index - 1);
     await quickSort(index + 1, end);
+    renderArray();
 }
 
 async function partition(start, end) {
     let pivotIndex = start;
     let pivotValue = array[end];
     for (let i = start; i < end; i++) {
+        renderArray([i, pivotIndex, end]);
         if (array[i] < pivotValue) {
             [array[i], array[pivotIndex]] = [array[pivotIndex], array[i]];
             pivotIndex++;
-            renderArray();
+            renderArray([i, pivotIndex, end]);
             await sleep(delay);
         }
     }
     [array[pivotIndex], array[end]] = [array[end], array[pivotIndex]];
-    renderArray();
+    renderArray([pivotIndex, end]);
     await sleep(delay);
     return pivotIndex;
 }
@@ -92,6 +101,7 @@ async function mergeSort(start = 0, end = array.length - 1) {
     await mergeSort(start, mid);
     await mergeSort(mid + 1, end);
     await merge(start, mid, end);
+    renderArray();
 }
 
 async function merge(start, mid, end) {
@@ -99,22 +109,24 @@ async function merge(start, mid, end) {
     const right = array.slice(mid + 1, end + 1);
     let i = 0, j = 0, k = start;
     while (i < left.length && j < right.length) {
+        renderArray([start + i, mid + 1 + j]);
+        await sleep(delay);
         if (left[i] < right[j]) {
             array[k++] = left[i++];
         } else {
             array[k++] = right[j++];
         }
-        renderArray();
+        renderArray([k - 1]);
         await sleep(delay);
     }
     while (i < left.length) {
         array[k++] = left[i++];
-        renderArray();
+        renderArray([k - 1]);
         await sleep(delay);
     }
     while (j < right.length) {
         array[k++] = right[j++];
-        renderArray();
+        renderArray([k - 1]);
         await sleep(delay);
     }
 }
@@ -123,7 +135,7 @@ sortButton.addEventListener('click', async () => {
     sortButton.disabled = true;
     generateArrayButton.disabled = true;
     const algorithm = algorithmSelect.value;
-    delay = 100 - speedInput.value;
+    delay = 500 - speedInput.value * 4; // Adjust delay to control speed
     if (algorithm === 'bubble') await bubbleSort();
     else if (algorithm === 'insertion') await insertionSort();
     else if (algorithm === 'quick') await quickSort();

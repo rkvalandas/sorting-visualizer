@@ -23,6 +23,8 @@ body {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 #arrayContainer {
     display: flex;
     align-items: flex-end;
@@ -44,6 +46,10 @@ body {
     border-top-right-radius: 5px;
     transition: height 0.2s;
     width: calc(80% / 50 - 4px);
+}
+
+.active-bar {
+    background-color: #e74c3c; /* Red color for the active bar */
 }
 
 label {
