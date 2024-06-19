@@ -10,7 +10,7 @@ function generateArray() {
         const bar = document.createElement('div');
         bar.classList.add('bar');
         bar.style.height = `${value}px`;
-        bar.style.width = '20px';
+        bar.style.width = '200px';
         container.appendChild(bar);
     }
 }
