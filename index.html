@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SORTING VISUALIZER</h1>
-    <div id="container"></div>
-    <button type="button" class="btn1 btn0" onclick="generateArray()">Generate New Array</button>
-    <button type="button" class="btn1 btn2" onclick="bubbleSort()">Bubble Sort</button>
+    <div class="controls">
+        <label for="algorithm">Algorithm :</label>
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="quick">Quick Sort</option>
+            <option value="insertion">Insertion Sort</option>
+        </select>
+        <label for="speed">Speed :</label>
+        <input type="range" id="speed" min="1" max="100" value="50">
+        <button id="sortButton">Sort</button>
+        <button id="generateArrayButton">Generate New Array</button>
+    </div>
+    <div id="arrayContainer"></div>
     <script src="script.js"></script>
 </body>
 </html>
