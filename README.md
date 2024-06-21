@@ -42,9 +42,9 @@ You can open the file directly by navigating to the project directory and double
 ***Adjust Speed:*** Use the speed slider to control the sorting animation speed.
 ***Start Sorting:*** Click the "Sort" button to begin the sorting process. Watch the bars move and sort in real-time with their heights displayed.
 ## Screenshots
-![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.29.13 PM.png)
-![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.30.36 PM.png)
-![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.31.21 PM.png)
+<img src="Screenshots/Screenshot1.png" alt="Sorting Visualizer" width="600">
+<img src="screenshots/Screenshot2.png" alt="Sorting Visualizer" width="600">
+<img src="screenshots/Screenshot3.png" alt="Sorting Visualizer" width="600">
 
 ## Contributing
 
