@@ -29,3 +29,46 @@ You need a web browser to run this project.
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/rkvalandas/sorting-visualizer.git
+2. **Navigate to the project directory**:
+   ```sh
+    cd sorting-visualizer
+3. **Open index.html in your browser:**:
+Open index.html in your browser:
+You can open the file directly by navigating to the project directory and double-clicking on index.html.
+### Usage
+
+***Generate Array:*** Click the "Generate New Array" button to create a new array of random numbers.
+***Select Algorithm:*** Choose the desired sorting algorithm from the dropdown menu.
+***Adjust Speed:*** Use the speed slider to control the sorting animation speed.
+***Start Sorting:*** Click the "Sort" button to begin the sorting process. Watch the bars move and sort in real-time with their heights displayed.
+### Screenshots
+
+### Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+1. **Fork the repository.**
+2. **Create your feature branch:**
+   ```sh
+git checkout -b feature/your-feature-name
+3. **Commit your changes:**
+    ```sh
+git commit -m 'Add some feature'
+4. **Push to the branch:**
+    ```sh
+git push origin feature/your-feature-name
+5. **Open a pull request.**
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgements
+
+- Inspired by various sorting visualizer projects available online.
+- Thanks to the open-source community for providing tools and resources.
+### Contact
+
+If you have any questions or suggestions, feel free to reach out.
+
+- ***Your Name:*** valandasuramakrishna@gmail.com
+- ***GitHub:*** rkvalandas
