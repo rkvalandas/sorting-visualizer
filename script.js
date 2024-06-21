@@ -7,7 +7,7 @@ const generateArrayButton = document.getElementById('generateArrayButton');
 let array = [];
 let delay = 100;
 
-function generateArray(size = 50) {
+function generateArray(size = 15) {
     array = [];
     arrayContainer.innerHTML = '';
     for (let i = 0; i < size; i++) {
