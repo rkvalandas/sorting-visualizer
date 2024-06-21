@@ -49,14 +49,14 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 1. **Fork the repository.**
 2. **Create your feature branch:**
-   ```sh
-git checkout -b feature/your-feature-name
+    ```sh
+    git checkout -b feature/your-feature-name
 3. **Commit your changes:**
     ```sh
-git commit -m 'Add some feature'
+    git commit -m 'Add some feature'
 4. **Push to the branch:**
     ```sh
-git push origin feature/your-feature-name
+    git push origin feature/your-feature-name
 5. **Open a pull request.**
 ### License
 
