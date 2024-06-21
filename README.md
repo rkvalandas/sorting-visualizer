@@ -35,15 +35,18 @@ You need a web browser to run this project.
 3. **Open index.html in your browser:**:
 Open index.html in your browser:
 You can open the file directly by navigating to the project directory and double-clicking on index.html.
-### Usage
+## Usage
 
 ***Generate Array:*** Click the "Generate New Array" button to create a new array of random numbers.
 ***Select Algorithm:*** Choose the desired sorting algorithm from the dropdown menu.
 ***Adjust Speed:*** Use the speed slider to control the sorting animation speed.
 ***Start Sorting:*** Click the "Sort" button to begin the sorting process. Watch the bars move and sort in real-time with their heights displayed.
-### Screenshots
+## Screenshots
+![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.29.13 PM.png)
+![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.30.36 PM.png)
+![Sorting Visualizer](Screenshots/Screenshot 2024-06-21 at 2.31.21 PM.png)
 
-### Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
@@ -58,15 +61,15 @@ Contributions are welcome! Please open an issue or submit a pull request for any
     ```sh
     git push origin feature/your-feature-name
 5. **Open a pull request.**
-### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgements
+## Acknowledgements
 
 - Inspired by various sorting visualizer projects available online.
 - Thanks to the open-source community for providing tools and resources.
-### Contact
+## Contact
 
 If you have any questions or suggestions, feel free to reach out.
 
