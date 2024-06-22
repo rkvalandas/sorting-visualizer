@@ -63,7 +63,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 5. **Open a pull request.**
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
@@ -73,5 +73,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 If you have any questions or suggestions, feel free to reach out.
 
-- ***Your Name:*** valandasuramakrishna@gmail.com
+- ***rk valandasu:*** valandasuramakrishna@gmail.com
 - ***GitHub:*** rkvalandas
