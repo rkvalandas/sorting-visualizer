@@ -82,7 +82,7 @@ body {
 }
 
 .active-bar {
-    background-color: rgb(236, 217, 12); /* Red color for the active bar */
+    background-color: #e74c3c; /* Red color for the active bar */
 }
 
 label {
