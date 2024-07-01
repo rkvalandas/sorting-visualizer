@@ -37,6 +37,20 @@ body {
     overflow: hidden;
 }
 
+#arrayBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70vw;
+    height: 5vw;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align:justify;
+}
+
 .bar {
     margin: 0.2vw;
     background-color: rgb(2, 173, 59);
@@ -47,8 +61,20 @@ body {
     text-align: center;
 }
 
-.bar span {
-    bottom: 0;
+.arrBar {
+    display:flex;
+    align-items: center;
+    height: 80%;
+    margin: 0.2vw;
+    background-color: rgb(8, 193, 70);
+    border-radius: 35%;
+    transition: height 0.2s;
+    width: 5.5vw;
+    text-align: center;
+}
+
+#arrayBox span {
+    text-align: center;
     width: 100%;
     color: black;
     font-size: 2vw;
@@ -113,5 +139,9 @@ button:disabled {
     #arrayContainer {
         width: 90%;
         height: 250px;
+    }
+    #arrayBox {
+        width: 90%;
+        height: 7vw;
     }
 }

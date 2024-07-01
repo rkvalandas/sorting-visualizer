@@ -3,6 +3,7 @@ const algorithmSelect = document.getElementById('algorithm');
 const speedInput = document.getElementById('speed');
 const sortButton = document.getElementById('sortButton');
 const generateArrayButton = document.getElementById('generateArrayButton');
+const arrayBox = document.getElementById('arrayBox');
 
 let array = [];
 let delay = 100;
@@ -18,16 +19,21 @@ function generateArray(size = 15) {
 
 function renderArray(activeIndices = []) {
     arrayContainer.innerHTML = '';
+    arrayBox.innerHTML = '';
     array.forEach((value, index) => {
         const bar = document.createElement('div');
         bar.classList.add('bar');
         bar.style.height = `${value}%`;
+        const arrBar = document.createElement('div');
+        arrBar.classList.add('arrBar');
         if (activeIndices.includes(index)) {
-            bar.classList.add('active-bar');
+                bar.classList.add('active-bar');
+                arrBar.classList.add('active-bar');
         }
-        const barLabel = document.createElement('span');
-        barLabel.textContent = value;
-        bar.appendChild(barLabel);
+        const arrLabel = document.createElement('span');
+        arrLabel.textContent = value;
+        arrBar.appendChild(arrLabel);
+        arrayBox.appendChild(arrBar);
         arrayContainer.appendChild(bar);
     });
 }
