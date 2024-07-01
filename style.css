@@ -53,6 +53,7 @@ body {
 
 .bar {
     margin: 0.2vw;
+    border: 0.1vw solid gray;
     background-color: rgb(2, 173, 59);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -66,6 +67,7 @@ body {
     align-items: center;
     height: 80%;
     margin: 0.2vw;
+    border: 0.1vw solid gray;
     background-color: rgb(8, 193, 70);
     border-radius: 35%;
     transition: height 0.2s;
@@ -81,7 +83,7 @@ body {
 }
 
 .active-bar {
-    background-color: #e74c3c; /* Red color for the active bar */
+    background-color: rgb(236, 217, 12); /* Red color for the active bar */
 }
 
 label {
@@ -143,5 +145,6 @@ button:disabled {
     #arrayBox {
         width: 90%;
         height: 7vw;
+        margin-top: 5px;
     }
 }
