@@ -130,6 +130,17 @@ button:disabled {
     background-color: #bdc3c7;
     cursor: not-allowed;
 }
+.icons {
+    display: flex;
+    padding: 10px;
+    margin-top: 30px;
+}
+.icon > a > svg {
+    color: black;
+    height: 30px;
+    width: 30px;
+    margin: 1vw;
+}
 @media (max-width: 600px) {
     .controls {
         display: grid;
