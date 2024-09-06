@@ -16,10 +16,6 @@ A web application to visualize various sorting algorithms in real-time. This pro
 - ***Select Algorithm:*** Choose the desired sorting algorithm from the dropdown menu.
 - ***Adjust Speed:*** Use the speed slider to control the sorting animation speed.
 - ***Start Sorting:*** Click the "Sort" button to begin the sorting process. Watch the bars move and sort in real-time with their heights displayed.
-## Screenshots
-<img src="Screenshots/Screenshot0.png" alt="Sorting Visualizer" width="600">
-<img src="Screenshots/Screenshot1.png" alt="Sorting Visualizer" width="600">
-<img src="Screenshots/Screenshot2.png" alt="Sorting Visualizer" width="600">
 
 ## License
 
