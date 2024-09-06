@@ -130,13 +130,16 @@ button:disabled {
     background-color: #bdc3c7;
     cursor: not-allowed;
 }
+p {
+    padding: 20px;
+}
 .icons {
     display: flex;
-    padding: 10px;
-    margin-top: 30px;
 }
 .icon > a > svg {
     color: black;
+    padding-left: 5px;
+    padding-right: 5px;
     height: 30px;
     width: 30px;
     margin: 1vw;
