@@ -13,16 +13,27 @@
         <label for="algorithm">Algorithm :</label>
         <select id="algorithm">
             <option value="bubble">Bubble Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="selection">Selection Sort</option>
             <option value="merge">Merge Sort</option>
             <option value="quick">Quick Sort</option>
-            <option value="insertion">Insertion Sort</option>
+        </select>
+        <label for="size">Size :</label>
+        <select id="size">
+            <option value="10">select your size</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
         </select>
         <label for="speed">Speed :</label>
         <input type="range" id="speed" min="1" max="100" value="50">
     </div>
     <div class="controls1">
-        <button id="sortButton">Sort</button>
         <button id="generateArrayButton">Generate New Array</button>
+        <button id="sortButton">Sort</button>
     </div>
     <div id="arrayContainer"></div>
     <div id="arrayBox"></div>

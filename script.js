@@ -4,9 +4,14 @@ const speedInput = document.getElementById('speed');
 const sortButton = document.getElementById('sortButton');
 const generateArrayButton = document.getElementById('generateArrayButton');
 const arrayBox = document.getElementById('arrayBox');
+const sizeInput = document.getElementById('size');
 
 let array = [];
 let delay = 100;
+
+sizeInput.addEventListener("change", function() {
+    generateArray();
+});
 
 function generateArray(size = 15) {
     array = [];
@@ -70,6 +75,28 @@ async function insertionSort() {
         array[j + 1] = key;
         renderArray([j + 1, i]);
         await sleep(delay);
+    }
+    renderArray();
+}
+
+async function selectionSort() {
+    for (let i = 0; i < array.length - 1; i++) {
+        let minIndex = i;
+        for (let j = i + 1; j < array.length; j++) {
+            renderArray([i,j]);
+            await sleep(delay);
+            if (array[j] < array[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        if (minIndex !== i) {
+            let temp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = temp;
+            renderArray([i, minIndex]);
+            await sleep(delay);
+        }
     }
     renderArray();
 }
@@ -149,6 +176,7 @@ sortButton.addEventListener('click', async () => {
     else if (algorithm === 'insertion') await insertionSort();
     else if (algorithm === 'quick') await quickSort();
     else if (algorithm === 'merge') await mergeSort();
+    else if (algorithm === 'selection') await selectionSort();
     sortButton.disabled = false;
     generateArrayButton.disabled = false;
 });
