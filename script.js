@@ -13,7 +13,7 @@ sizeInput.addEventListener("change", function() {
     generateArray();
 });
 
-function generateArray(size = 15) {
+function generateArray(size = sizeInput.value) {
     array = [];
     arrayContainer.innerHTML = '';
     for (let i = 0; i < size; i++) {

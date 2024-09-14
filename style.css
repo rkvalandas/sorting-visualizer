@@ -38,8 +38,8 @@ body {
 
 #arrayBox {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-content: center;
     width: 70vw;
     height: 5vw;
     border: 1px solid #ccc;
@@ -48,6 +48,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align:justify;
+    overflow: hidden;
 }
 
 .bar {
@@ -78,7 +79,7 @@ body {
     text-align: center;
     width: 100%;
     color: black;
-    font-size: 2vw;
+    font-size: calc(1vw + 0.2em);
 }
 
 .active-bar {
