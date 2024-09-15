@@ -12,9 +12,11 @@ A web application to visualize various sorting algorithms in real-time. This pro
 
 ## Usage
 
-- ***Generate Array:*** Click the "Generate New Array" button to create a new array of random numbers.
+
 - ***Select Algorithm:*** Choose the desired sorting algorithm from the dropdown menu.
+- ***Select Size:*** Choose the size of the array in multiples of 5 up to 30.
 - ***Adjust Speed:*** Use the speed slider to control the sorting animation speed.
+- ***Generate Array:*** Click the "Generate New Array" button to create a new array of random numbers.
 - ***Start Sorting:*** Click the "Sort" button to begin the sorting process. Watch the bars move and sort in real-time with their heights displayed.
 
 ## License
