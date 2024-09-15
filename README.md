@@ -5,6 +5,7 @@ A web application to visualize various sorting algorithms in real-time. This pro
 ## Features
 
 - **Algorithm Selection**: Choose from Bubble Sort, Merge Sort, Quick Sort, and Insertion Sort.
+- **Size Selection**: Choose from 5, 10, 15, 20, 25, 30.
 - **Speed Adjustment**: Control the speed of the sorting animations.
 - **Custom Array Input**: Generate a new array of random numbers.
 - **Real-Time Visualization**: Watch the sorting process step-by-step with smooth animations.
