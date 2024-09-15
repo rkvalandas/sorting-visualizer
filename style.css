@@ -26,8 +26,8 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 70vw;
-    height: 40vw;
+    width: 65vw;
+    height: 30vw;
     border: 1px solid #ccc;
     background-color: #fff;
     margin-top: 30px;
@@ -40,7 +40,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 70vw;
+    width: 65vw;
     height: 5vw;
     border: 1px solid #ccc;
     background-color: #fff;
@@ -58,7 +58,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     transition: height 0.2s;
-    width: 5.5vw;
+    width: 8vw;
     text-align: center;
 }
 
@@ -71,7 +71,7 @@ body {
     background-color: rgb(8, 193, 70);
     border-radius: 35%;
     transition: height 0.2s;
-    width: 5.5vw;
+    width: 8vw;
     text-align: center;
 }
 
